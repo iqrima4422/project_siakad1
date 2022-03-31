@@ -16,9 +16,12 @@ return new class extends Migration
         Schema::create('mahasiswa', function (Blueprint $table) {
             $table->id('id_mahasiswa');
             $table->string ('nim', 10)->index();
-            $table->string ('nama',25)->index();
-            $table->string ('kelas',5);
-            $table->string ('jurusan',35);
+            $table->string ('nama', 25)->index();
+            $table->string ('kelas', 5);
+            $table->string ('jurusan', 35);
+            $table->string ('email', 50);
+            $table->string ('alamat', 50);
+            $table->string ('tanggal_lahir', 30);
             $table->timestamps();
         });
     }
