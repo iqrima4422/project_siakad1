@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\Mahasiswa as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Model; //Model Eloquent
 
+
 class Mahasiswa extends Model //Definisi Model
 {
     protected $table='mahasiswa'; // Eloquent akan membuat model mahasiswa menyimpan record di tabel mahasiswa
@@ -26,4 +27,8 @@ class Mahasiswa extends Model //Definisi Model
         'Alamat',
         'Tanggal_Lahir'
     ];
+    public function kelas()
+    {
+        return $this->belongsTo(Kelas::class);
+    }
 };

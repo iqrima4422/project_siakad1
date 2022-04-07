@@ -44,7 +44,7 @@
         <tr>
             <td>{{ $mhs ->nim }}</td>
             <td>{{ $mhs ->nama }}</td>
-            <td>{{ $mhs ->kelas }}</td>
+            <td>{{ $mhs ->kelas-> nama_kelas }}</td>
             <td>{{ $mhs ->jurusan }}</td>
             <td>{{ $mhs ->email }}</td>
             <td>{{ $mhs ->alamat }}</td>
@@ -61,7 +61,7 @@
         </tr>
         @endforeach
     </table>
-    <div class="pagination-links">
+    <div class="d-flex">
 		<br><br>
 			<ul class="nav">
 				{{ $mahasiswa->links() }}
@@ -69,23 +69,4 @@
             
 	</div> 
 
-    <!-- script -->
-    <script>
-        function myFunction() {
-            var input, filter, ul, li, a, i, txtValue;
-            input = document.getElementById("cari");
-            filter = input.value.toUpperCase();
-            ul = document.getElementById("myUL");
-            li = ul.getElementsByTagName("li");
-            for (i = 0; i < li.length; i++) {
-                a = li[i].getElementsByTagName("a")[0];
-                txtValue = a.textContent || a.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    li[i].style.display = "";
-                } else {
-                    li[i].style.display = "none";
-                }
-            }
-        }
-        </script>
 @endsection
