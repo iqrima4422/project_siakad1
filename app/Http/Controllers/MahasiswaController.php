@@ -23,7 +23,7 @@ class MahasiswaController extends Controller
             // return view('mahasiswa.index', ['mahasiswa' => $mahasiswa,'paginate'=>$paginate]);
 
         // yang semula Mahasiswa::all, diubah menjadi with() yang menyatakan relasi
-                $mahasiswa = Mahasiswa::with('kelas')->orderBy('nim', 'asc')->paginate(2); // Mengambil semua isi tabel
+                $mahasiswa = Mahasiswa::with('kelas')->orderBy('nim', 'asc')->paginate(4); // Mengambil semua isi tabel
                 return view('mahasiswa.index', ['mahasiswa' => $mahasiswa,]);
         
         //paginate
