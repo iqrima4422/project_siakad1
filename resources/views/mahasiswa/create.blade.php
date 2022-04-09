@@ -30,11 +30,7 @@
                     <input type="Nama" name="Nama" class="form-control" id="Nama" ariadescribedby="
                     Nama" >
                 </div>
-                <!-- <div class="form-group">
-                    <label for="Kelas">Kelas</label>
-                    <input type="Kelas" name="Kelas" class="form-control" id="Kelas" ariadescribedby="
-                    password" >
-                </div> -->
+                
 
                 <!-- merubah create pada Kelas-->
                 <div class="form-group">
