@@ -11,6 +11,7 @@
                     <textarea type="text" class="form-control"required="required" name="content"></textarea></br>
                     <label for="image">Feature Image: </label>
                     <input type="file" class="form-control"required="required" name="featured_image"></br>
+                    
                     <button type="submit" name="submit" class="btn btn-primaryfloat-right">Simpan</button>
                 </div>
         </form>
