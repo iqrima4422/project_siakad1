@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-
+use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\MahasiswaController;
 use Illuminate\Http\Request;
 /*
@@ -29,3 +29,6 @@ Route::resource('mahasiswa', MahasiswaController::class);
 Route::get('/khs/{nim}', [MahasiswaController::class, 'khs'])->name('khs');
 
 Route::get('/cari', [MahasiswaController::class, 'cari'])->name('cari');
+
+// coba
+Route::resource('articles', ArticleController::class);
