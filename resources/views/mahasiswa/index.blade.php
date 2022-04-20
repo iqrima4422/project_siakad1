@@ -33,6 +33,7 @@
         <tr>
             <th>Nim</th>
             <th>Nama</th>
+            <th>Profile</th>
             <th>Kelas</th>
             <th>Jurusan</th>
             <th>Email</th>
@@ -44,6 +45,7 @@
         <tr>
             <td>{{ $mhs ->nim }}</td>
             <td>{{ $mhs ->nama }}</td>
+            <td><img style="width: 100px" class="" src="{{ asset('./storage/'. $mhs->photo_profile) }}" alt=""></td>
             <td>{{ $mhs ->kelas-> nama_kelas }}</td>
             <td>{{ $mhs ->jurusan }}</td>
             <td>{{ $mhs ->email }}</td>

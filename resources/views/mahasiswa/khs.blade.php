@@ -45,6 +45,7 @@
                 @endforeach
             </tbody>
         </table>
+        <center><a class="btn btn-danger" href="{{ route('cetak_pdf', $daftar->mahasiswa->nim) }}"> Cetak Ke PDF</a></center>
     </div>
 </div>
 @endsection

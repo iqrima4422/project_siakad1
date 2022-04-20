@@ -30,6 +30,9 @@ Route::get('/khs/{nim}', [MahasiswaController::class, 'khs'])->name('khs');
 
 Route::get('/cari', [MahasiswaController::class, 'cari'])->name('cari');
 
+
+Route::get('/mahasiswa/khs/cetak_pdf/{nim}', [MahasiswaController::class, 'cetak_pdf'])->name('cetak_pdf');
+
 // Praktikum 10 - Unggah Berkas dan Eksport PDF
 Route::resource('articles', ArticleController::class);
 
